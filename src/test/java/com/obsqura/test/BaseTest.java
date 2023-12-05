@@ -32,7 +32,7 @@ public class BaseTest {
 		else {
 			System.out.println("Choose correct Browser");
 		}
-		 
+		
 		 driver.manage().window().maximize();
 		 driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 		 driver.get("https://groceryapp.uniqassosiates.com/admin/login");

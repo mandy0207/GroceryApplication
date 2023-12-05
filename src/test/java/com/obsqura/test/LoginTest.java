@@ -8,8 +8,6 @@ public class LoginTest extends BaseTest{
 	
 	@Test
 	public void verifyLogin() {
-		
-		
 		lp.Login();
 			
 	
