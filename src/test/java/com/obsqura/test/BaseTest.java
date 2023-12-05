@@ -9,6 +9,9 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
+import com.obsqura.pages.HomePage;
+import com.obsqura.pages.LoginPage;
+
 public class BaseTest {
 	WebDriver driver = null;
 	
@@ -34,6 +37,12 @@ public class BaseTest {
 		 driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 		 driver.get("https://groceryapp.uniqassosiates.com/admin/login");
 		 
+	}
+	public LoginPage lp;
+	public HomePage hp;
+	public void initPages() {
+	 lp = new LoginPage(driver);
+	 hp = new HomePage(driver);
 	}
 	
 	@AfterMethod
