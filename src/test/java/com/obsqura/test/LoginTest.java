@@ -1,6 +1,7 @@
 package com.obsqura.test;
-import org.openqa.selenium.By;
 import org.testng.annotations.Test;
+
+import com.obsqura.pages.LoginPage;
 
 public class LoginTest extends BaseTest{
 
@@ -8,9 +9,9 @@ public class LoginTest extends BaseTest{
 	@Test
 	public void verifyLogin() {
 		
-	 driver.findElement(By.xpath("//input[@placeholder='Username']")).sendKeys("admin");
-	 driver.findElement(By.xpath("//input[@placeholder='Password']")).sendKeys("admin");
-	 driver.findElement(By.xpath("//button[@type='submit']")).click();
-	 
+		LoginPage lp = new LoginPage(driver);
+		lp.Login();
+			
+	
 	}
 }
