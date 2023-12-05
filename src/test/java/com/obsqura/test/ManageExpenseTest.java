@@ -1,17 +1,21 @@
 package com.obsqura.test;
 
-import org.openqa.selenium.By;
 import org.testng.annotations.Test;
+
+import com.obsqura.pages.HomePage;
+import com.obsqura.pages.LoginPage;
 
 public class ManageExpenseTest extends BaseTest{
 
 	@Test
 	public void ExpenseCategory() {
+		LoginPage lp = new LoginPage(driver);
+		lp.Login();
+		
+		HomePage hp = new HomePage(driver);
+		hp.navigateToExpenseCategory();
 		
 		
-		 driver.findElement(By.xpath("//input[@placeholder='Username']")).sendKeys("admin");
-		 driver.findElement(By.xpath("//input[@placeholder='Password']")).sendKeys("admin");
-		 driver.findElement(By.xpath("//button[@type='submit']")).click();
 	}
 	
 }

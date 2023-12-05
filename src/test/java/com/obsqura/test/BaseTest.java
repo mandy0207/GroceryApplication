@@ -1,5 +1,7 @@
 package com.obsqura.test;
 
+import java.time.Duration;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
@@ -29,6 +31,7 @@ public class BaseTest {
 		}
 		 
 		 driver.manage().window().maximize();
+		 driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 		 driver.get("https://groceryapp.uniqassosiates.com/admin/login");
 		 
 	}
@@ -36,6 +39,6 @@ public class BaseTest {
 	@AfterMethod
 	public void tearDown() {
 		System.out.println("I am in after method");
-		driver.quit();
+		//driver.quit();
 	}
 }
