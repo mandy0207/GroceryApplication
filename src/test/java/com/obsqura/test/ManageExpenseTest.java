@@ -9,6 +9,7 @@ public class ManageExpenseTest extends BaseTest{
 		
 		lp.Login();
 		hp.navigateToExpenseCategory();
+		ecp.createExpense();
 			
 	}
 	

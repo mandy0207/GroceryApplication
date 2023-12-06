@@ -25,8 +25,9 @@ public class HomePage extends PageUtility {
 	private WebElement expenseCategoryBtn;
 	
 	public void navigateToExpenseCategory() {
-		manangeExpenseBtn.click();
-		expenseCategoryBtn.click();
+		clickElement(manangeExpenseBtn);
+		clickElement(expenseCategoryBtn);
+		
 	}
 	
 	

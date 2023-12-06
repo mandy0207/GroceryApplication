@@ -9,6 +9,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
+import com.obsqura.pages.ExpenseCategoryPage;
 import com.obsqura.pages.HomePage;
 import com.obsqura.pages.LoginPage;
 
@@ -41,10 +42,12 @@ public class BaseTest {
 	}
 	public LoginPage lp;
 	public HomePage hp;
+	public ExpenseCategoryPage ecp;
 	
 	public void initPages() {
 	 lp = new LoginPage(driver);
 	 hp = new HomePage(driver);
+	 ecp=new ExpenseCategoryPage(driver);
 	}
 	
 	@AfterMethod
