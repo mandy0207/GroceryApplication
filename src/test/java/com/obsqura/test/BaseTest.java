@@ -17,7 +17,7 @@ public class BaseTest {
 	
 	@BeforeMethod
 	public void initDriver() {
-		System.out.println("I am in before method");
+	
 		String browser = "Chrome";
 		
 		if(browser.equalsIgnoreCase("Chrome")) {
@@ -34,12 +34,14 @@ public class BaseTest {
 		}
 		
 		 driver.manage().window().maximize();
+		 initPages();
 		 driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 		 driver.get("https://groceryapp.uniqassosiates.com/admin/login");
 		 
 	}
 	public LoginPage lp;
 	public HomePage hp;
+	
 	public void initPages() {
 	 lp = new LoginPage(driver);
 	 hp = new HomePage(driver);

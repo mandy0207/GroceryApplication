@@ -6,7 +6,7 @@ public class ManageExpenseTest extends BaseTest{
 
 	@Test
 	public void ExpenseCategory() {
-	
+		
 		lp.Login();
 		hp.navigateToExpenseCategory();
 			
