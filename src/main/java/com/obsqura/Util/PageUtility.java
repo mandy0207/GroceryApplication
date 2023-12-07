@@ -17,6 +17,10 @@ public class PageUtility {
 	public void setTextBox(WebElement element, String value) {
 		element.sendKeys(value);
 	}
+	
+	public String getElementText(WebElement element) {
+		return element.getText();
+	}
 
 	public void acceptAlert() {
 		driver.switchTo().alert().accept();

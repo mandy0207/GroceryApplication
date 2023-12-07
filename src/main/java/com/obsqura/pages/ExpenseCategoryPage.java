@@ -28,11 +28,18 @@ public class ExpenseCategoryPage extends PageUtility {
 	@FindBy(css = "[name='Create']")
 	private WebElement saveBtn;
 	
+	@FindBy(css = ".alert.alert-success")
+	private WebElement alertTextExpenseCreated;
 	
-	public void createExpense() {
+	
+	
+	public String createExpense() {
 		clickElement(newBtn);
 		setTextBox(title, UniqueGenerator.getUniqueString());
 		clickElement(saveBtn);
+		String alertText = getElementText(alertTextExpenseCreated);
+		return 	alertText.split("!")[1].trim();
+	
 	}
 	
 	

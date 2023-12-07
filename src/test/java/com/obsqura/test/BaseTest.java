@@ -52,7 +52,6 @@ public class BaseTest {
 	
 	@AfterMethod
 	public void tearDown() {
-		System.out.println("I am in after method");
-		//driver.quit();
+		driver.quit();
 	}
 }
