@@ -1,12 +1,14 @@
 package com.obsqura.test;
 
+import java.io.IOException;
+
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class ManageExpenseTest extends BaseTest{
 
 	@Test
-	public void ExpenseCategory() {
+	public void ExpenseCategory() throws IOException {
 		
 		lp.Login();
 		hp.navigateToExpenseCategory();

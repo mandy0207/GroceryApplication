@@ -1,68 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-12-06T21:46:49 EST" name="Default suite" finished-at="2023-12-06T21:46:56 EST" duration-ms="7112">
+  <suite started-at="2023-12-06T22:16:07 EST" name="Default suite" finished-at="2023-12-06T22:16:12 EST" duration-ms="5836">
     <groups>
     </groups>
-    <test started-at="2023-12-06T21:46:49 EST" name="Default test" finished-at="2023-12-06T21:46:56 EST" duration-ms="7112">
-      <class name="com.obsqura.test.ManageExpenseTest">
-        <test-method is-config="true" signature="initDriver()[pri:0, instance:com.obsqura.test.ManageExpenseTest@dbf57b3]" started-at="2023-12-06T21:46:49 EST" name="initDriver" finished-at="2023-12-06T21:46:53 EST" duration-ms="4032" status="PASS">
+    <test started-at="2023-12-06T22:16:07 EST" name="Default test" finished-at="2023-12-06T22:16:12 EST" duration-ms="5836">
+      <class name="com.obsqura.test.LoginTest">
+        <test-method is-config="true" signature="initDriver()[pri:0, instance:com.obsqura.test.LoginTest@384ad17b]" started-at="2023-12-06T22:16:07 EST" name="initDriver" finished-at="2023-12-06T22:16:11 EST" duration-ms="3954" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initDriver -->
-        <test-method signature="ExpenseCategory()[pri:0, instance:com.obsqura.test.ManageExpenseTest@dbf57b3]" started-at="2023-12-06T21:46:53 EST" name="ExpenseCategory" finished-at="2023-12-06T21:46:56 EST" duration-ms="2731" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Failed to match expense alert Text expected [Exp Category Created Successfully] but found [Expense Category Created Successfully]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Failed to match expense alert Text expected [Exp Category Created Successfully] but found [Expense Category Created Successfully]
-at org.testng.Assert.fail(Assert.java:110)
-at org.testng.Assert.failNotEquals(Assert.java:1413)
-at org.testng.Assert.assertEqualsImpl(Assert.java:149)
-at org.testng.Assert.assertEquals(Assert.java:131)
-at org.testng.Assert.assertEquals(Assert.java:655)
-at com.obsqura.test.ManageExpenseTest.ExpenseCategory(ManageExpenseTest.java:15)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:806)
-at org.testng.TestRunner.run(TestRunner.java:601)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method signature="verifyLogin()[pri:0, instance:com.obsqura.test.LoginTest@384ad17b]" started-at="2023-12-06T22:16:11 EST" name="verifyLogin" finished-at="2023-12-06T22:16:12 EST" duration-ms="1503" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ExpenseCategory -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.obsqura.test.ManageExpenseTest@dbf57b3]" started-at="2023-12-06T21:46:56 EST" name="tearDown" finished-at="2023-12-06T21:46:56 EST" duration-ms="294" status="PASS">
+        </test-method> <!-- verifyLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.obsqura.test.LoginTest@384ad17b]" started-at="2023-12-06T22:16:12 EST" name="tearDown" finished-at="2023-12-06T22:16:12 EST" duration-ms="335" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.obsqura.test.ManageExpenseTest -->
+      </class> <!-- com.obsqura.test.LoginTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
