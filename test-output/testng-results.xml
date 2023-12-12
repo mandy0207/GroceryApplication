@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-12-06T22:16:07 EST" name="Default suite" finished-at="2023-12-06T22:16:12 EST" duration-ms="5836">
+  <suite started-at="2023-12-12T08:48:01 IST" name="Default suite" finished-at="2023-12-12T08:48:09 IST" duration-ms="7673">
     <groups>
     </groups>
-    <test started-at="2023-12-06T22:16:07 EST" name="Default test" finished-at="2023-12-06T22:16:12 EST" duration-ms="5836">
-      <class name="com.obsqura.test.LoginTest">
-        <test-method is-config="true" signature="initDriver()[pri:0, instance:com.obsqura.test.LoginTest@384ad17b]" started-at="2023-12-06T22:16:07 EST" name="initDriver" finished-at="2023-12-06T22:16:11 EST" duration-ms="3954" status="PASS">
+    <test started-at="2023-12-12T08:48:01 IST" name="Default test" finished-at="2023-12-12T08:48:09 IST" duration-ms="7673">
+      <class name="com.obsqura.test.CreateDeliveryBoy">
+        <test-method is-config="true" signature="initDriver()[pri:0, instance:com.obsqura.test.CreateDeliveryBoy@6404f418]" started-at="2023-12-12T08:48:01 IST" name="initDriver" finished-at="2023-12-12T08:48:05 IST" duration-ms="3391" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initDriver -->
-        <test-method signature="verifyLogin()[pri:0, instance:com.obsqura.test.LoginTest@384ad17b]" started-at="2023-12-06T22:16:11 EST" name="verifyLogin" finished-at="2023-12-06T22:16:12 EST" duration-ms="1503" status="PASS">
+        <test-method signature="createDeliverytBoy()[pri:0, instance:com.obsqura.test.CreateDeliveryBoy@6404f418]" started-at="2023-12-12T08:48:05 IST" name="createDeliverytBoy" finished-at="2023-12-12T08:48:09 IST" duration-ms="4241" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyLogin -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.obsqura.test.LoginTest@384ad17b]" started-at="2023-12-06T22:16:12 EST" name="tearDown" finished-at="2023-12-06T22:16:12 EST" duration-ms="335" status="PASS">
+        </test-method> <!-- createDeliverytBoy -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.obsqura.test.CreateDeliveryBoy@6404f418]" started-at="2023-12-12T08:48:09 IST" name="tearDown" finished-at="2023-12-12T08:48:09 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.obsqura.test.LoginTest -->
+      </class> <!-- com.obsqura.test.CreateDeliveryBoy -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

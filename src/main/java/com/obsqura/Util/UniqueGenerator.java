@@ -2,6 +2,9 @@ package com.obsqura.Util;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.UUID;
+
+import org.testng.annotations.Test;
 
 public class UniqueGenerator {
 
@@ -12,8 +15,7 @@ public class UniqueGenerator {
 	    Date date = new Date();  
 	     return  "client"+ formatter.format(date);  
 	}
-	
-	
+
 	
 	
 }

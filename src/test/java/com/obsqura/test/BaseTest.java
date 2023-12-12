@@ -11,6 +11,7 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
 import com.obsqura.Util.TestProperties;
+import com.obsqura.pages.DeliveryBoyPage;
 import com.obsqura.pages.ExpenseCategoryPage;
 import com.obsqura.pages.HomePage;
 import com.obsqura.pages.LoginPage;
@@ -48,11 +49,12 @@ public class BaseTest {
 	public LoginPage lp;
 	public HomePage hp;
 	public ExpenseCategoryPage ecp;
-	
+	public DeliveryBoyPage dlp;
 	public void initPages() {
 	 lp = new LoginPage(driver);
 	 hp = new HomePage(driver);
 	 ecp=new ExpenseCategoryPage(driver);
+	 dlp = new DeliveryBoyPage(driver);
 	}
 	
 	@AfterMethod
