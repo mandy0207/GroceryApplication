@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 
 public class ManageExpenseTest extends BaseTest{
 
-	@Test
+	@Test(groups="Smoke")
 	public void ExpenseCategory() throws IOException {
 		
 		lp.Login();

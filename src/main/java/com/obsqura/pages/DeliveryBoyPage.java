@@ -33,24 +33,25 @@ public class DeliveryBoyPage extends PageUtility{
 	@FindBy(css = "[name='create']")
 	private WebElement saveBtn;
 	
+	@FindBy(css = ".alert.alert-success")
+	private WebElement alertTextDeliverBoyCreated;
 	
-	public void createDeliverBoy(String name, String username, int password) throws InterruptedException {
+	public void createDeliverBoy(String name, String username, String password) throws InterruptedException {
 		clickElement(newBtn);
 		setTextBox(nameInput, name);
 		setTextBox(usernameInput, username);
-		setTextBox(passwordInput, Integer.toString(password));
+		setTextBox(passwordInput, password);
 		scrollToBottom();
      	waitUntilClickable(saveBtn);
-		Thread.sleep(2000);
-
 		clickElement(saveBtn);
 		
 			
 	}
 	
 	public String validateDeliveryBoyIsCreated() {
-		
-		return "";
+		String text=getElementText(alertTextDeliverBoyCreated);
+		String [] arr=text.split("Alert!");
+		return arr[1].trim();
 	}
 	
 	

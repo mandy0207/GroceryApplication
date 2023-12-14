@@ -2,6 +2,7 @@ package com.obsqura.test;
 
 import java.io.IOException;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.obsqura.Util.RandomNumberUtility;
@@ -16,14 +17,16 @@ public class CreateDeliveryBoy extends BaseTest {
 		hp.navigateToManageDeliveryBoy();
 		String name =UniqueGenerator.getUniqueString();
 		String userName = RandomNumberUtility.getRandomString();
-		int password= RandomNumberUtility.getUniqueRandomNumber();
+		String password= Integer.toString(RandomNumberUtility.getUniqueRandomNumber());
 		
 		dlp.createDeliverBoy(name, userName, password );
-		String alertText = dlp.validateDeliveryBoyIsCreated();
+		String actualDeliveryCreationMsg = dlp.validateDeliveryBoyIsCreated();
 		
 		/**
 		 * Perform assertion 
 		 */
+		
+		Assert.assertEquals(actualDeliveryCreationMsg, "Delivery Boy Details Created Successfully", "Failed to match  alert Text");
 		
 	}
 }

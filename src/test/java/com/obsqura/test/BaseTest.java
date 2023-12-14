@@ -9,6 +9,8 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Optional;
+import org.testng.annotations.Parameters;
 
 import com.obsqura.Util.TestProperties;
 import com.obsqura.pages.DeliveryBoyPage;
@@ -19,10 +21,14 @@ import com.obsqura.pages.LoginPage;
 public class BaseTest {
 	WebDriver driver = null;
 	
-	@BeforeMethod
-	public void initDriver() throws IOException {
-	
-		String browser = TestProperties.getProperties().getProperty("browser");
+	@BeforeMethod(alwaysRun=true)
+	@Parameters({"browser"})
+	public void initDriver(@Optional String browser) throws IOException {
+	 
+		if(browser==null|| browser.isEmpty()) {
+		 browser = TestProperties.getProperties().getProperty("browser");
+		}
+		
 		String env= TestProperties.getProperties().getProperty("Envrionment");
 		String URL=TestProperties.getProperties().getProperty(env);
 		
@@ -57,7 +63,7 @@ public class BaseTest {
 	 dlp = new DeliveryBoyPage(driver);
 	}
 	
-	@AfterMethod
+	@AfterMethod(alwaysRun=true)
 	public void tearDown() {
 		driver.quit();
 	}
