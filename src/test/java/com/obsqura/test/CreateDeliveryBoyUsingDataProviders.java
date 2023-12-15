@@ -41,7 +41,6 @@ public class CreateDeliveryBoyUsingDataProviders extends BaseTest {
 		data[1][2]= Integer.toString(RandomNumberUtility.getUniqueRandomNumber());
 		return data;
 	
-
 	}
 	
 	

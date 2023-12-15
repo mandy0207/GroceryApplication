@@ -9,21 +9,105 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">LoginTest</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">8,692</td><td></td><td></td></tr>
-<tr class="stripe"><td><a href="#t1">ManageExpenseTest</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">7,835</td><td></td><td></td></tr>
-<tr><td><a href="#t2">CreateDeliveryBoyTest</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">9,686</td><td></td><td></td></tr>
-<tr class="stripe"><td><a href="#t3">DataProvidersTest</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">19,196</td><td></td><td></td></tr>
-<tr><th>Total</th><th class="num">5</th><th class="num">0</th><th class="num">0</th><th class="num">0</th><th class="num">45,409</th><th colspan="2"></th></tr>
+<tr><td><a href="#t0">LoginTest</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">4,323</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">ManageExpense</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">5,141</td><td></td><td></td></tr>
+<tr><td><a href="#t2">DeliveryBoy</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">6,176</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t3">DeliverBoyDP</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">9,857</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">2</th><th class="num">0</th><th class="num">0</th><th class="num attn">3</th><th class="num">25,497</th><th colspan="2"></th></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">LoginTest &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.obsqura.test.LoginTest</td><td><a href="#m0">verifyLogin</a></td><td rowspan="1">1702524042042</td><td rowspan="1">1020</td></tr></tbody>
-<tbody id="t1"><tr><th colspan="4">ManageExpenseTest &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.obsqura.test.ManageExpenseTest</td><td><a href="#m1">ExpenseCategory</a></td><td rowspan="1">1702524047818</td><td rowspan="1">3157</td></tr></tbody>
-<tbody id="t2"><tr><th colspan="4">CreateDeliveryBoyTest &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.obsqura.test.CreateDeliveryBoy</td><td><a href="#m2">createDeliverytBoy</a></td><td rowspan="1">1702524055647</td><td rowspan="1">5175</td></tr></tbody>
-<tbody id="t3"><tr><th colspan="4">DataProvidersTest &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">com.obsqura.test.CreateDeliveryBoyUsingDataProviders</td><td><a href="#m3">createDeliverytBoy</a></td><td rowspan="2">1702524066487</td><td rowspan="2">4220</td></tr><tr class="passedeven"><td><a href="#m4">createDeliverytBoy</a></td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">LoginTest &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.obsqura.test.LoginTest</td><td><a href="#m0">verifyLogin</a></td><td rowspan="1">1702609168593</td><td rowspan="1">674</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">ManageExpense &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.obsqura.test.ManageExpenseTest</td><td><a href="#m1">ExpenseCategory</a></td><td rowspan="1">1702609168610</td><td rowspan="1">1544</td></tr></tbody>
+<tbody id="t2"><tr><th colspan="4">DeliveryBoy &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.obsqura.test.CreateDeliveryBoy</td><td><a href="#m2">createDeliverytBoy</a></td><td rowspan="1">1702609167784</td><td rowspan="1">3392</td></tr></tbody>
+<tbody id="t3"><tr><th colspan="4">DeliverBoyDP &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">com.obsqura.test.CreateDeliveryBoyUsingDataProviders</td><td><a href="#m3">createDeliverytBoy</a></td><td rowspan="2">1702609168593</td><td rowspan="2">2598</td></tr><tr class="failedeven"><td><a href="#m4">createDeliverytBoy</a></td></tr></tbody>
 </table>
 <h2>LoginTest</h2><h3 id="m0">com.obsqura.test.LoginTest#verifyLogin</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h2>ManageExpenseTest</h2><h3 id="m1">com.obsqura.test.ManageExpenseTest#ExpenseCategory</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h2>CreateDeliveryBoyTest</h2><h3 id="m2">com.obsqura.test.CreateDeliveryBoy#createDeliverytBoy</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h2>DataProvidersTest</h2><h3 id="m3">com.obsqura.test.CreateDeliveryBoyUsingDataProviders#createDeliverytBoy</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>client14/12/2023 08:51:01</td><td>Jasna9297</td><td>9098</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">com.obsqura.test.CreateDeliveryBoyUsingDataProviders#createDeliverytBoy</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>client14/12/2023 08:51:01</td><td>Jasna9404</td><td>3741</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>ManageExpense</h2><h3 id="m1">com.obsqura.test.ManageExpenseTest#ExpenseCategory</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>DeliveryBoy</h2><h3 id="m2">com.obsqura.test.CreateDeliveryBoy#createDeliverytBoy</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (334, 775)
+  (Session info: chrome=120.0.6099.72)
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d314768ad889efa17051fe755b1c8e49, clickElement {id=ACD0AAA065161248E259415D1E155C3B_element_54}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.72, chrome: {chromedriverVersion: 120.0.6099.71 (9729082fe617..., userDataDir: C:\Users\InfoBahn\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57439}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57439/devtoo..., se:cdpVersion: 120.0.6099.72, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (d314768ad889efa17051fe755b1c8e49)] -&gt; css selector: [name=&apos;create&apos;]]
+Session ID: d314768ad889efa17051fe755b1c8e49
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy15.click(Unknown Source)
+	at com.obsqura.Util.PageUtility.clickElement(PageUtility.java:16)
+	at com.obsqura.pages.DeliveryBoyPage.createDeliverBoy(DeliveryBoyPage.java:46)
+	at com.obsqura.test.CreateDeliveryBoy.createDeliverytBoy(CreateDeliveryBoy.java:22)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+... Removed 26 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>DeliverBoyDP</h2><h3 id="m3">com.obsqura.test.CreateDeliveryBoyUsingDataProviders#createDeliverytBoy</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>client15/12/2023 08:29:25</td><td>Jasna9117</td><td>4676</td></tr><tr><th colspan="3">Exception</th></tr><tr><td colspan="3"><div class="stacktrace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (334, 775)
+  (Session info: chrome=120.0.6099.72)
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f9d80448262a931eb6210c5a18f17708, clickElement {id=FDF4D3DE891988D8499776AA75DC1EC7_element_54}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.72, chrome: {chromedriverVersion: 120.0.6099.71 (9729082fe617..., userDataDir: C:\Users\InfoBahn\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57440}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57440/devtoo..., se:cdpVersion: 120.0.6099.72, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (f9d80448262a931eb6210c5a18f17708)] -&gt; css selector: [name=&apos;create&apos;]]
+Session ID: f9d80448262a931eb6210c5a18f17708
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy15.click(Unknown Source)
+	at com.obsqura.Util.PageUtility.clickElement(PageUtility.java:16)
+	at com.obsqura.pages.DeliveryBoyPage.createDeliverBoy(DeliveryBoyPage.java:46)
+	at com.obsqura.test.CreateDeliveryBoyUsingDataProviders.createDeliverytBoy(CreateDeliveryBoyUsingDataProviders.java:19)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+... Removed 26 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.obsqura.test.CreateDeliveryBoyUsingDataProviders#createDeliverytBoy</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>client15/12/2023 08:29:25</td><td>Jasna4473</td><td>3715</td></tr><tr><th colspan="3">Exception</th></tr><tr><td colspan="3"><div class="stacktrace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (334, 775)
+  (Session info: chrome=120.0.6099.72)
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [7348911fe49e4d9794f7bd4fdfa6e458, clickElement {id=0B29128A612629B5DE3C040A42F7D906_element_54}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.72, chrome: {chromedriverVersion: 120.0.6099.71 (9729082fe617..., userDataDir: C:\Users\InfoBahn\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57521}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57521/devtoo..., se:cdpVersion: 120.0.6099.72, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (7348911fe49e4d9794f7bd4fdfa6e458)] -&gt; css selector: [name=&apos;create&apos;]]
+Session ID: 7348911fe49e4d9794f7bd4fdfa6e458
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy15.click(Unknown Source)
+	at com.obsqura.Util.PageUtility.clickElement(PageUtility.java:16)
+	at com.obsqura.pages.DeliveryBoyPage.createDeliverBoy(DeliveryBoyPage.java:46)
+	at com.obsqura.test.CreateDeliveryBoyUsingDataProviders.createDeliverytBoy(CreateDeliveryBoyUsingDataProviders.java:19)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+... Removed 26 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
