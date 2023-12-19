@@ -11,7 +11,7 @@ import com.obsqura.Util.UniqueGenerator;
 public class CreateDeliveryBoy extends BaseTest {
 
 	@Test
-	public void createDeliverytBoy() throws IOException, InterruptedException {
+	public void createDeliveryBoy() throws IOException, InterruptedException {
 		
 		lp.Login();
 		hp.navigateToManageDeliveryBoy();
