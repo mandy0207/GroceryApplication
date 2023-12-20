@@ -34,7 +34,15 @@ public class PageUtility extends WaitUtility {
 	}
 	
 	public void scrollToBottom() {
-		((JavascriptExecutor) driver).executeScript("window.scrollBy(0,800)");
+		JavascriptExecutor js = (JavascriptExecutor)driver;
+		js.executeScript("window.scrollTo(0, document.body.scrollHeight)");
+	
 	}
+	
+	public void clickUsingJavaScript(WebElement element) {
+		JavascriptExecutor js = (JavascriptExecutor)driver;
+		js.executeScript("arguments[0].click();", element);
+	}
+
 	
 }

@@ -1,384 +1,181 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="2" failed="3" skipped="0">
+<testng-results ignored="0" total="5" passed="4" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-12-19T08:46:28 IST" name="Suite" finished-at="2023-12-19T08:46:45 IST" duration-ms="17665">
+  <suite started-at="2023-12-20T08:52:56 IST" name="Suite" finished-at="2023-12-20T08:53:07 IST" duration-ms="10818">
     <groups>
       <group name="Smoke">
-        <method signature="ManageExpenseTest.ExpenseCategory()[pri:0, instance:com.obsqura.test.ManageExpenseTest@73194df]" name="ExpenseCategory" class="com.obsqura.test.ManageExpenseTest"/>
+        <method signature="ManageExpenseTest.ExpenseCategory()[pri:0, instance:com.obsqura.test.ManageExpenseTest@48e92c5c]" name="ExpenseCategory" class="com.obsqura.test.ManageExpenseTest"/>
       </group> <!-- Smoke -->
     </groups>
-    <test started-at="2023-12-19T08:46:28 IST" name="LoginTest" finished-at="2023-12-19T08:46:31 IST" duration-ms="2960">
+    <test started-at="2023-12-20T08:52:56 IST" name="LoginTest" finished-at="2023-12-20T08:53:02 IST" duration-ms="5894">
       <class name="com.obsqura.test.LoginTest">
-        <test-method is-config="true" signature="initDriver(java.lang.String)[pri:0, instance:com.obsqura.test.LoginTest@1e461e41]" started-at="2023-12-19T08:46:28 IST" name="initDriver" finished-at="2023-12-19T08:46:30 IST" duration-ms="2112" status="PASS">
+        <test-method is-config="true" signature="initDriver(java.lang.String)[pri:0, instance:com.obsqura.test.LoginTest@6eb2384f]" started-at="2023-12-20T08:52:56 IST" name="initDriver" finished-at="2023-12-20T08:53:01 IST" duration-ms="4592" status="PASS">
           <params>
             <param index="0">
-              <value>
-                <![CDATA[Chrome]]>
-              </value>
+              <value is-null="true"/>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initDriver -->
-        <test-method signature="verifyLogin()[pri:0, instance:com.obsqura.test.LoginTest@1e461e41]" started-at="2023-12-19T08:46:30 IST" name="verifyLogin" finished-at="2023-12-19T08:46:31 IST" duration-ms="717" status="PASS">
+        <test-method signature="verifyLogin()[pri:0, instance:com.obsqura.test.LoginTest@6eb2384f]" started-at="2023-12-20T08:53:01 IST" name="verifyLogin" finished-at="2023-12-20T08:53:02 IST" duration-ms="1043" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLogin -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.obsqura.test.LoginTest@1e461e41]" started-at="2023-12-19T08:46:31 IST" name="tearDown" finished-at="2023-12-19T08:46:31 IST" duration-ms="103" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.obsqura.test.LoginTest@6eb2384f]" started-at="2023-12-20T08:53:02 IST" name="tearDown" finished-at="2023-12-20T08:53:02 IST" duration-ms="208" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.obsqura.test.LoginTest -->
     </test> <!-- LoginTest -->
-    <test started-at="2023-12-19T08:46:31 IST" name="ManageExpenseTest" finished-at="2023-12-19T08:46:34 IST" duration-ms="3064">
+    <test started-at="2023-12-20T08:52:56 IST" name="ManageExpense" finished-at="2023-12-20T08:53:04 IST" duration-ms="7336">
       <class name="com.obsqura.test.ManageExpenseTest">
-        <test-method is-config="true" signature="initDriver(java.lang.String)[pri:0, instance:com.obsqura.test.ManageExpenseTest@73194df]" started-at="2023-12-19T08:46:31 IST" name="initDriver" finished-at="2023-12-19T08:46:33 IST" duration-ms="1788" status="PASS">
+        <test-method is-config="true" signature="initDriver(java.lang.String)[pri:0, instance:com.obsqura.test.ManageExpenseTest@48e92c5c]" started-at="2023-12-20T08:52:56 IST" name="initDriver" finished-at="2023-12-20T08:53:01 IST" duration-ms="4594" status="PASS">
           <params>
             <param index="0">
-              <value>
-                <![CDATA[Edge]]>
-              </value>
+              <value is-null="true"/>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initDriver -->
-        <test-method signature="ExpenseCategory()[pri:0, instance:com.obsqura.test.ManageExpenseTest@73194df]" started-at="2023-12-19T08:46:33 IST" name="ExpenseCategory" finished-at="2023-12-19T08:46:34 IST" duration-ms="1142" status="PASS">
+        <test-method signature="ExpenseCategory()[pri:0, instance:com.obsqura.test.ManageExpenseTest@48e92c5c]" started-at="2023-12-20T08:53:01 IST" name="ExpenseCategory" finished-at="2023-12-20T08:53:03 IST" duration-ms="2309" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: null
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.fail(Assert.java:115)
+at com.obsqura.test.ManageExpenseTest.ExpenseCategory(ManageExpenseTest.java:18)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:471)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:840)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ExpenseCategory -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.obsqura.test.ManageExpenseTest@73194df]" started-at="2023-12-19T08:46:34 IST" name="tearDown" finished-at="2023-12-19T08:46:34 IST" duration-ms="127" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.obsqura.test.ManageExpenseTest@48e92c5c]" started-at="2023-12-20T08:53:03 IST" name="tearDown" finished-at="2023-12-20T08:53:04 IST" duration-ms="179" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.obsqura.test.ManageExpenseTest -->
-    </test> <!-- ManageExpenseTest -->
-    <test started-at="2023-12-19T08:46:34 IST" name="CreateDeliveryBoyTest" finished-at="2023-12-19T08:46:38 IST" duration-ms="3746">
+    </test> <!-- ManageExpense -->
+    <test started-at="2023-12-20T08:52:56 IST" name="DeliveryBoy" finished-at="2023-12-20T08:53:04 IST" duration-ms="7442">
       <class name="com.obsqura.test.CreateDeliveryBoy">
-        <test-method is-config="true" signature="initDriver(java.lang.String)[pri:0, instance:com.obsqura.test.CreateDeliveryBoy@19b93fa8]" started-at="2023-12-19T08:46:34 IST" name="initDriver" finished-at="2023-12-19T08:46:36 IST" duration-ms="1538" status="PASS">
+        <test-method is-config="true" signature="initDriver(java.lang.String)[pri:0, instance:com.obsqura.test.CreateDeliveryBoy@5ba88be8]" started-at="2023-12-20T08:52:56 IST" name="initDriver" finished-at="2023-12-20T08:53:01 IST" duration-ms="4586" status="PASS">
           <params>
             <param index="0">
-              <value>
-                <![CDATA[Chrome]]>
-              </value>
+              <value is-null="true"/>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initDriver -->
-        <test-method signature="createDeliveryBoy()[pri:0, instance:com.obsqura.test.CreateDeliveryBoy@19b93fa8]" started-at="2023-12-19T08:46:36 IST" name="createDeliveryBoy" finished-at="2023-12-19T08:46:38 IST" duration-ms="2076" status="FAIL">
-          <exception class="org.openqa.selenium.ElementClickInterceptedException">
-            <message>
-              <![CDATA[element click intercepted: Element is not clickable at point (334, 763)
-  (Session info: chrome=120.0.6099.110)
-Build info: version: '4.15.0', revision: '1d14b5521b'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [e96d14dfdf40e03f01189625e2d9889c, clickElement {id=F0D2AFBEB84CF4C803E8CFC9AD53C323_element_52}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.110, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Users\InfoBahn\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58115}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58115/devtoo..., se:cdpVersion: 120.0.6099.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (e96d14dfdf40e03f01189625e2d9889c)] -> css selector: [name='create']]
-Session ID: e96d14dfdf40e03f01189625e2d9889c]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (334, 763)
-  (Session info: chrome=120.0.6099.110)
-Build info: version: '4.15.0', revision: '1d14b5521b'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [e96d14dfdf40e03f01189625e2d9889c, clickElement {id=F0D2AFBEB84CF4C803E8CFC9AD53C323_element_52}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.110, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Users\InfoBahn\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58115}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58115/devtoo..., se:cdpVersion: 120.0.6099.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (e96d14dfdf40e03f01189625e2d9889c)] -> css selector: [name='create']]
-Session ID: e96d14dfdf40e03f01189625e2d9889c
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-at jdk.proxy2/jdk.proxy2.$Proxy17.click(Unknown Source)
-at com.obsqura.Util.PageUtility.clickElement(PageUtility.java:16)
-at com.obsqura.pages.DeliveryBoyPage.createDeliverBoy(DeliveryBoyPage.java:46)
-at com.obsqura.test.CreateDeliveryBoy.createDeliveryBoy(CreateDeliveryBoy.java:22)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:806)
-at org.testng.TestRunner.run(TestRunner.java:601)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+        <test-method signature="createDeliveryBoy()[pri:0, instance:com.obsqura.test.CreateDeliveryBoy@5ba88be8]" started-at="2023-12-20T08:53:01 IST" name="createDeliveryBoy" finished-at="2023-12-20T08:53:03 IST" duration-ms="2562" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createDeliveryBoy -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.obsqura.test.CreateDeliveryBoy@19b93fa8]" started-at="2023-12-19T08:46:38 IST" name="tearDown" finished-at="2023-12-19T08:46:38 IST" duration-ms="126" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.obsqura.test.CreateDeliveryBoy@5ba88be8]" started-at="2023-12-20T08:53:03 IST" name="tearDown" finished-at="2023-12-20T08:53:04 IST" duration-ms="255" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.obsqura.test.CreateDeliveryBoy -->
-    </test> <!-- CreateDeliveryBoyTest -->
-    <test started-at="2023-12-19T08:46:38 IST" name="DataProvidersTest" finished-at="2023-12-19T08:46:45 IST" duration-ms="7621">
+    </test> <!-- DeliveryBoy -->
+    <test started-at="2023-12-20T08:52:56 IST" name="DeliverBoyDP" finished-at="2023-12-20T08:53:07 IST" duration-ms="10818">
       <class name="com.obsqura.test.CreateDeliveryBoyUsingDataProviders">
-        <test-method is-config="true" signature="initDriver(java.lang.String)[pri:0, instance:com.obsqura.test.CreateDeliveryBoyUsingDataProviders@7d1cfb8b]" started-at="2023-12-19T08:46:38 IST" name="initDriver" finished-at="2023-12-19T08:46:39 IST" duration-ms="1562" status="PASS">
+        <test-method is-config="true" signature="initDriver(java.lang.String)[pri:0, instance:com.obsqura.test.CreateDeliveryBoyUsingDataProviders@42039326]" started-at="2023-12-20T08:52:56 IST" name="initDriver" finished-at="2023-12-20T08:53:01 IST" duration-ms="4594" status="PASS">
           <params>
             <param index="0">
-              <value>
-                <![CDATA[Edge]]>
-              </value>
+              <value is-null="true"/>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initDriver -->
-        <test-method signature="createDeliverytBoy(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.obsqura.test.CreateDeliveryBoyUsingDataProviders@7d1cfb8b]" started-at="2023-12-19T08:46:39 IST" name="createDeliverytBoy" data-provider="GetData" finished-at="2023-12-19T08:46:41 IST" duration-ms="2141" status="FAIL">
+        <test-method signature="createDeliveryBoyDataProviders(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.obsqura.test.CreateDeliveryBoyUsingDataProviders@42039326]" started-at="2023-12-20T08:53:01 IST" name="createDeliveryBoyDataProviders" data-provider="GetData" finished-at="2023-12-20T08:53:03 IST" duration-ms="2554" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[client19/12/2023 08:46:38]]>
+                <![CDATA[client20/12/2023 08:52:56]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[Jasna1732]]>
+                <![CDATA[Jasna6746]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[9684]]>
+                <![CDATA[3097]]>
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.ElementClickInterceptedException">
-            <message>
-              <![CDATA[element click intercepted: Element is not clickable at point (334, 776)
-  (Session info: MicrosoftEdge=120.0.2210.77)
-Build info: version: '4.15.0', revision: '1d14b5521b'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [0a3b434b523184dfaeafdcc688c87df4, clickElement {id=B0964622579D674548D51722E95FD1E2_element_48}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 120.0.2210.77, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:58139}, msedge: {msedgedriverVersion: 120.0.2210.77 (e8468c80f044..., userDataDir: C:\Users\InfoBahn\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58139/devtoo..., se:cdpVersion: 120.0.2210.77, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[EdgeDriver: MicrosoftEdge on windows (0a3b434b523184dfaeafdcc688c87df4)] -> css selector: [name='create']]
-Session ID: 0a3b434b523184dfaeafdcc688c87df4]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (334, 776)
-  (Session info: MicrosoftEdge=120.0.2210.77)
-Build info: version: '4.15.0', revision: '1d14b5521b'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [0a3b434b523184dfaeafdcc688c87df4, clickElement {id=B0964622579D674548D51722E95FD1E2_element_48}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 120.0.2210.77, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:58139}, msedge: {msedgedriverVersion: 120.0.2210.77 (e8468c80f044..., userDataDir: C:\Users\InfoBahn\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58139/devtoo..., se:cdpVersion: 120.0.2210.77, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[EdgeDriver: MicrosoftEdge on windows (0a3b434b523184dfaeafdcc688c87df4)] -> css selector: [name='create']]
-Session ID: 0a3b434b523184dfaeafdcc688c87df4
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-at jdk.proxy2/jdk.proxy2.$Proxy17.click(Unknown Source)
-at com.obsqura.Util.PageUtility.clickElement(PageUtility.java:16)
-at com.obsqura.pages.DeliveryBoyPage.createDeliverBoy(DeliveryBoyPage.java:46)
-at com.obsqura.test.CreateDeliveryBoyUsingDataProviders.createDeliverytBoy(CreateDeliveryBoyUsingDataProviders.java:19)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:806)
-at org.testng.TestRunner.run(TestRunner.java:601)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- createDeliverytBoy -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.obsqura.test.CreateDeliveryBoyUsingDataProviders@7d1cfb8b]" started-at="2023-12-19T08:46:41 IST" name="tearDown" finished-at="2023-12-19T08:46:42 IST" duration-ms="133" status="PASS">
+        </test-method> <!-- createDeliveryBoyDataProviders -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.obsqura.test.CreateDeliveryBoyUsingDataProviders@42039326]" started-at="2023-12-20T08:53:03 IST" name="tearDown" finished-at="2023-12-20T08:53:04 IST" duration-ms="161" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="initDriver(java.lang.String)[pri:0, instance:com.obsqura.test.CreateDeliveryBoyUsingDataProviders@7d1cfb8b]" started-at="2023-12-19T08:46:42 IST" name="initDriver" finished-at="2023-12-19T08:46:43 IST" duration-ms="1532" status="PASS">
+        <test-method is-config="true" signature="initDriver(java.lang.String)[pri:0, instance:com.obsqura.test.CreateDeliveryBoyUsingDataProviders@42039326]" started-at="2023-12-20T08:53:04 IST" name="initDriver" finished-at="2023-12-20T08:53:05 IST" duration-ms="1824" status="PASS">
           <params>
             <param index="0">
-              <value>
-                <![CDATA[Edge]]>
-              </value>
+              <value is-null="true"/>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initDriver -->
-        <test-method signature="createDeliverytBoy(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.obsqura.test.CreateDeliveryBoyUsingDataProviders@7d1cfb8b]" started-at="2023-12-19T08:46:43 IST" name="createDeliverytBoy" data-provider="GetData" finished-at="2023-12-19T08:46:45 IST" duration-ms="2097" status="FAIL">
+        <test-method signature="createDeliveryBoyDataProviders(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.obsqura.test.CreateDeliveryBoyUsingDataProviders@42039326]" started-at="2023-12-20T08:53:05 IST" name="createDeliveryBoyDataProviders" data-provider="GetData" finished-at="2023-12-20T08:53:07 IST" duration-ms="1542" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[client19/12/2023 08:46:38]]>
+                <![CDATA[client20/12/2023 08:52:56]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[Jasna4893]]>
+                <![CDATA[Jasna1442]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[6821]]>
+                <![CDATA[8742]]>
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.ElementClickInterceptedException">
-            <message>
-              <![CDATA[element click intercepted: Element is not clickable at point (334, 752)
-  (Session info: MicrosoftEdge=120.0.2210.77)
-Build info: version: '4.15.0', revision: '1d14b5521b'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [a9ff52e0984ce28a1816a186f29fbbf4, clickElement {id=483DA655A922036C54A45760C0DF8DB8_element_48}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 120.0.2210.77, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:58173}, msedge: {msedgedriverVersion: 120.0.2210.77 (e8468c80f044..., userDataDir: C:\Users\InfoBahn\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58173/devtoo..., se:cdpVersion: 120.0.2210.77, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[EdgeDriver: MicrosoftEdge on windows (a9ff52e0984ce28a1816a186f29fbbf4)] -> css selector: [name='create']]
-Session ID: a9ff52e0984ce28a1816a186f29fbbf4]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (334, 752)
-  (Session info: MicrosoftEdge=120.0.2210.77)
-Build info: version: '4.15.0', revision: '1d14b5521b'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [a9ff52e0984ce28a1816a186f29fbbf4, clickElement {id=483DA655A922036C54A45760C0DF8DB8_element_48}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 120.0.2210.77, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:58173}, msedge: {msedgedriverVersion: 120.0.2210.77 (e8468c80f044..., userDataDir: C:\Users\InfoBahn\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58173/devtoo..., se:cdpVersion: 120.0.2210.77, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[EdgeDriver: MicrosoftEdge on windows (a9ff52e0984ce28a1816a186f29fbbf4)] -> css selector: [name='create']]
-Session ID: a9ff52e0984ce28a1816a186f29fbbf4
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-at jdk.internal.reflect.GeneratedMethodAccessor16.invoke(Unknown Source)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-at jdk.proxy2/jdk.proxy2.$Proxy17.click(Unknown Source)
-at com.obsqura.Util.PageUtility.clickElement(PageUtility.java:16)
-at com.obsqura.pages.DeliveryBoyPage.createDeliverBoy(DeliveryBoyPage.java:46)
-at com.obsqura.test.CreateDeliveryBoyUsingDataProviders.createDeliverytBoy(CreateDeliveryBoyUsingDataProviders.java:19)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:806)
-at org.testng.TestRunner.run(TestRunner.java:601)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- createDeliverytBoy -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.obsqura.test.CreateDeliveryBoyUsingDataProviders@7d1cfb8b]" started-at="2023-12-19T08:46:45 IST" name="tearDown" finished-at="2023-12-19T08:46:45 IST" duration-ms="144" status="PASS">
+        </test-method> <!-- createDeliveryBoyDataProviders -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.obsqura.test.CreateDeliveryBoyUsingDataProviders@42039326]" started-at="2023-12-20T08:53:07 IST" name="tearDown" finished-at="2023-12-20T08:53:07 IST" duration-ms="105" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.obsqura.test.CreateDeliveryBoyUsingDataProviders -->
-    </test> <!-- DataProvidersTest -->
+    </test> <!-- DeliverBoyDP -->
   </suite> <!-- Suite -->
 </testng-results>

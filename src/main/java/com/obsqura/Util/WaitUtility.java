@@ -15,13 +15,14 @@ public class WaitUtility  {
 	public WaitUtility(WebDriver driver) {
 	
 		this.driver = driver;
-		 wait = new WebDriverWait(driver, Duration.ofSeconds(0, 8));
+		 wait = new WebDriverWait(driver, Duration.ofSeconds(0, 10));
 	}
 
 
 	
 	public void waitUntilClickable(WebElement element) {
 		wait.until(ExpectedConditions.elementToBeClickable(element));
+	
 	}
 	
 	public void waitUntilVisible(WebElement element) {

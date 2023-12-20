@@ -43,9 +43,8 @@ public class DeliveryBoyPage extends PageUtility{
 		setTextBox(passwordInput, password);
 		scrollToBottom();
      	waitUntilClickable(saveBtn);
-		clickElement(saveBtn);
+     	clickUsingJavaScript(saveBtn);
 		
-			
 	}
 	
 	public String validateDeliveryBoyIsCreated() {

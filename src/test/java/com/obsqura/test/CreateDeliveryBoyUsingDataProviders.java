@@ -12,7 +12,7 @@ import com.obsqura.Util.UniqueGenerator;
 public class CreateDeliveryBoyUsingDataProviders extends BaseTest {
 
 	@Test(dataProvider="GetData")
-	public void createDeliverytBoy(String name, String userName, String password) throws IOException, InterruptedException {
+	public void createDeliveryBoyDataProviders(String name, String userName, String password) throws IOException, InterruptedException {
 		
 		lp.Login();
 		hp.navigateToManageDeliveryBoy();

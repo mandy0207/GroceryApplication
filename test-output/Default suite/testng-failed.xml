@@ -5,9 +5,9 @@
     <classes>
       <class name="com.obsqura.test.CreateDeliveryBoy">
         <methods>
-          <include name="tearDown"/>
+          <include name="createDeliveryBoy"/>
           <include name="initDriver"/>
-          <include name="createDeliverytBoy"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.obsqura.test.CreateDeliveryBoy -->
     </classes>
