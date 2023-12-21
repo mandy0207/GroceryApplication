@@ -27,4 +27,10 @@
       <class name="com.obsqura.test.ManageExpenseTest"/>
     </classes>
   </test> 
+  
+     <test  name="AdminTest">
+    <classes>
+      <class name="com.obsqura.test.AdminTest"/>
+    </classes>
+  </test> 
 </suite> 

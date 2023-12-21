@@ -9,8 +9,8 @@
       <class name="com.obsqura.test.ManageExpenseTest">
         <methods>
           <include name="ExpenseCategory"/>
-          <include name="tearDown"/>
           <include name="initDriver"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.obsqura.test.ManageExpenseTest -->
     </classes>

@@ -16,12 +16,12 @@ public class ReportListener extends BaseTest implements ITestListener{
 
 	ExtentReports extent=ExtentReporterNG.getReporter();
 	ExtentTest test;
-	ThreadLocal<ExtentTest> extentTest = new ThreadLocal<ExtentTest>();
+	ThreadLocal<ExtentTest> extentTest = new ThreadLocal<ExtentTest>();   
 	
 	@Override
 	public void onTestStart(ITestResult result) {
         test = extent.createTest(result.getMethod().getMethodName());
-        extentTest.set(test); 
+        extentTest.set(test);  
 	}
 
 	@Override

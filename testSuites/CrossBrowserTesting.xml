@@ -36,4 +36,12 @@
     </classes>
   </test> 
   
+  
+       <test  name="AdminTest">
+		   <parameter name="browser" value="Chrome"></parameter>
+    <classes>
+      <class name="com.obsqura.test.AdminTest"/>
+    </classes>
+  </test>
+  
 </suite> 

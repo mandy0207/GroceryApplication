@@ -18,6 +18,7 @@ import org.testng.annotations.Parameters;
 
 import com.obsqura.Util.TestProperties;
 import com.obsqura.constants.Constants;
+import com.obsqura.pages.AdminUsersPage;
 import com.obsqura.pages.DeliveryBoyPage;
 import com.obsqura.pages.ExpenseCategoryPage;
 import com.obsqura.pages.HomePage;
@@ -59,12 +60,14 @@ public class BaseTest {
 	public HomePage hp;
 	public ExpenseCategoryPage ecp;
 	public DeliveryBoyPage dlp;
+	public AdminUsersPage au;
 
 	public void initPages() {
 		lp = new LoginPage(driver);
 		hp = new HomePage(driver);
 		ecp = new ExpenseCategoryPage(driver);
 		dlp = new DeliveryBoyPage(driver);
+		au= new AdminUsersPage (driver);
 	}
 
 	@AfterMethod(alwaysRun = true)

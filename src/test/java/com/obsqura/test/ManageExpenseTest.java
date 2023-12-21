@@ -15,7 +15,7 @@ public class ManageExpenseTest extends BaseTest{
 		String expenseCreatedText = ecp.createExpense();
 		
 		Assert.assertEquals(expenseCreatedText, "Expense Category Created Successfully", "Failed to match expense alert Text");
-		Assert.fail();
+		//Assert.fail();
 			
 	}
 	

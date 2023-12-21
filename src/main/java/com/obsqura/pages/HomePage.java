@@ -27,6 +27,9 @@ public class HomePage extends PageUtility {
 	@FindBy(xpath = "(//*[contains(text(),'Manage Delivery Boy')])[1]")
 	private WebElement manageDeliveryBoyBtn;
 	
+	@FindBy(xpath ="//p[contains(text(),'Admin Users')]")
+	private WebElement AdminUsers;
+	
 	
 	
 	public void navigateToExpenseCategory() {
@@ -39,4 +42,7 @@ public class HomePage extends PageUtility {
 		clickElement(manageDeliveryBoyBtn);
 	}
 	
+	public void navigateToAdminUsers() {
+		clickElement(AdminUsers);
+	}
 }

@@ -3,6 +3,7 @@ package com.obsqura.Util;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.Select;
 
 public class PageUtility extends WaitUtility {
 
@@ -44,5 +45,12 @@ public class PageUtility extends WaitUtility {
 		js.executeScript("arguments[0].click();", element);
 	}
 
+	public void selectDropdown(WebElement element, String visibleText) {
+		
+		Select staticDropdown = new Select(element);
+		staticDropdown.selectByVisibleText(visibleText);
+		
+		
+	}
 	
 }
