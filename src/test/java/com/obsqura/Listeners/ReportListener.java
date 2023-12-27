@@ -9,7 +9,7 @@ import org.testng.ITestResult;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
-import com.obsqura.Util.ExtentReporterNG;
+import com.obsqura.Utils.ExtentReporterNG;
 import com.obsqura.test.BaseTest;
 
 public class ReportListener extends BaseTest implements ITestListener{

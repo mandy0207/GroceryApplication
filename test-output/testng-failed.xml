@@ -4,15 +4,15 @@
   <listeners>
     <listener class-name="com.obsqura.Listeners.ReportListener"/>
   </listeners>
-  <test thread-count="4" parallel="tests" name="ManageExpense(failed)">
+  <test thread-count="4" parallel="tests" name="DeliveryBoy(failed)">
     <classes>
-      <class name="com.obsqura.test.ManageExpenseTest">
+      <class name="com.obsqura.test.CreateDeliveryBoy">
         <methods>
-          <include name="ExpenseCategory"/>
+          <include name="createDeliveryBoy"/>
           <include name="initDriver"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- com.obsqura.test.ManageExpenseTest -->
+      </class> <!-- com.obsqura.test.CreateDeliveryBoy -->
     </classes>
-  </test> <!-- ManageExpense(failed) -->
+  </test> <!-- DeliveryBoy(failed) -->
 </suite> <!-- Failed suite [Suite] -->

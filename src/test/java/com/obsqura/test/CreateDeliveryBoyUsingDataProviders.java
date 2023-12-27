@@ -6,8 +6,8 @@ import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-import com.obsqura.Util.RandomNumberUtility;
-import com.obsqura.Util.UniqueGenerator;
+import com.obsqura.Utils.RandomNumberUtility;
+import com.obsqura.Utils.UniqueGenerator;
 
 public class CreateDeliveryBoyUsingDataProviders extends BaseTest {
 

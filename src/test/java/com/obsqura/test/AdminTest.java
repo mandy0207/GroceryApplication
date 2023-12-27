@@ -5,8 +5,8 @@ import java.io.IOException;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import com.obsqura.Util.ExcelReaderUtility;
-import com.obsqura.Util.RandomNumberUtility;
+import com.obsqura.Utils.ExcelReaderUtility;
+import com.obsqura.Utils.RandomNumberUtility;
 
 public class AdminTest extends BaseTest{
 

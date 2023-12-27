@@ -7,8 +7,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.obsqura.Util.PageUtility;
-import com.obsqura.Util.TestProperties;
+import com.obsqura.Utils.PageUtility;
+import com.obsqura.Utils.TestProperties;
 
 public class LoginPage extends PageUtility{
 	WebDriver driver;

@@ -3,6 +3,7 @@
 <suite name="Suite">
 	<listeners>
 		<listener class-name="com.obsqura.Listeners.ReportListener"></listener>
+		<listener class-name="com.obsqura.Listeners.MyTransformer"></listener>
 	</listeners>
 	
 	

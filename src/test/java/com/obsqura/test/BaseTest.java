@@ -16,7 +16,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 
-import com.obsqura.Util.TestProperties;
+import com.obsqura.Utils.TestProperties;
 import com.obsqura.constants.Constants;
 import com.obsqura.pages.AdminUsersPage;
 import com.obsqura.pages.DeliveryBoyPage;

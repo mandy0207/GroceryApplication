@@ -1,4 +1,4 @@
-package com.obsqura.Util;
+package com.obsqura.Utils;
 
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;

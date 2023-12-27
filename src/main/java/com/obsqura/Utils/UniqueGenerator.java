@@ -1,4 +1,4 @@
-package com.obsqura.Util;
+package com.obsqura.Utils;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
